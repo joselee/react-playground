@@ -1,7 +1,9 @@
-# List and list item
-Very simple app with two components. Outer `List` component, which renders many child `ListItem` components.
+# Todo app
+Todo app with all CRUD actions. Covers basic usage of props, states, refs, and events.
 
-Still read-only, with no interactions, but uses props to pass data downwards.
+Inspired by [TodoMVC app template](https://github.com/tastejs/todomvc-app-template).
 
 #### Setup and run
-Run an http-server from the root directory
+* npm install
+* gulp
+* go to http://localhost:8080 in browser

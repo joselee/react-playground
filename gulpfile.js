@@ -10,6 +10,11 @@ gulp.task('copy-index', function () {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('copy-css', function () {
+    return gulp.src('./src/styles/styles.css')
+        .pipe(gulp.dest('dist'));
+});
+
 gulp.task('build-jsx', function () {
     return browserify({entries: './src/scripts/index.jsx', extensions: ['.jsx'], debug: true})
         .transform('babelify', {presets: ['es2015', 'react']})
@@ -18,8 +23,9 @@ gulp.task('build-jsx', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('watch', ['build-jsx', 'copy-index'], function () {
+gulp.task('watch', ['build-jsx', 'copy-index', 'copy-css'], function () {
     gulp.watch('./src/**/*.jsx', ['build-jsx']);
+    gulp.watch('./src/**/*.css', ['copy-css']);
     gulp.watch('./src/index.html', ['copy-index']);
 });
 

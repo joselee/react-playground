@@ -1,0 +1,67 @@
+body {
+    background-color: #f1f1f1;
+    color: #333;
+    font-family: sans-serif;
+}
+.todo-app {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+}
+.todo-app-header {
+    background-color: #f1f1f1;
+    margin: 0;
+    font-size: 75px;
+    text-align: center;
+    color: rgba(0,0,0,0.3);
+}
+.todo-app-body {
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+.todo-add-form input {
+    width: 100%;
+    min-height: 35px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+}
+.todo-controls {
+    margin: 10px 0 0;
+    font-size: 0.8em;
+    text-align: right;
+    color: #999;
+}
+.filter-buttons span {
+    color: white;
+    padding: 3px 5px;
+    border-radius: 3px;
+    background: #ccc;
+    margin-left: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.filter-buttons span:hover {
+    cursor: pointer;
+}
+.filter-buttons span.active {
+    background-color: #5dc2af;
+}
+.todo-list-items {
+    padding: 0;
+}
+.todo-list-item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.todo-list-item input:hover, .todo-list-item label:hover {
+    cursor: pointer
+}
+.todo-list-item input[type='checkbox'] {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.done {
+    text-decoration: line-through;
+    color: #999;
+}

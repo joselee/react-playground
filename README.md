@@ -1,3 +1,5 @@
-# react-playground
-This is where I experiment with react.js.
-Other branches have actual code - keep master clean!
+# Hello world
+As simple as it gets
+
+#### Setup and run
+Run an http-server from the root directory

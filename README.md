@@ -1,2 +1,3 @@
 # react-playground
-Where I experiment with react.js
+This is where I experiment with react.js.
+Other branches have actual code - keep master clean!

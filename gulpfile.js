@@ -11,7 +11,7 @@ gulp.task('copy-index', function () {
 });
 
 gulp.task('build-jsx', function () {
-    return browserify({entries: './src/scripts/index.jsx', extensions: ['.jsx'], debug: false})
+    return browserify({entries: './src/scripts/index.jsx', extensions: ['.jsx'], debug: true})
         .transform('babelify', {presets: ['es2015', 'react']})
         .bundle()
         .pipe(source('app.js'))

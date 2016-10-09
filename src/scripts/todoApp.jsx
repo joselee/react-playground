@@ -63,7 +63,6 @@ export class TodoApp extends React.Component {
                 return (<TodoListItem todo={todo} toggleComplete={this.toggleComplete.bind(this)} key={todo.id} />);
             });
         }
-
         if (this.state.filters.active) {
             todoNodes = this.state.todos.map((todo) => {
                 if (!todo.done) {

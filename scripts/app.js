@@ -6,4 +6,4 @@ class HelloWorld extends React.Component {
     }
 }
 let container = document.querySelector('#app');
-ReactDOM.render(<HelloWorld/>, container);
+ReactDOM.render(<HelloWorld />, container);

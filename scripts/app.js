@@ -1,7 +1,7 @@
 class HelloWorld extends React.Component {
     render() {
         return (
-            <div>Hello World! This is react.</div>
+            <div>Hello World! This is ReactJS!</div>
         );
     }
 }

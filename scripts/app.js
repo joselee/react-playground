@@ -18,5 +18,4 @@ class ListItem extends React.Component {
     }
 }
 
-let container = document.querySelector('#app');
-ReactDOM.render(<List />, container);
+ReactDOM.render(<List />, document.querySelector('#app'));

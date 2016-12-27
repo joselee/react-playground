@@ -5,5 +5,4 @@ Inspired by [TodoMVC app template](https://github.com/tastejs/todomvc-app-templa
 
 #### Setup and run
 * npm install
-* npm run gulp
-* go to http://localhost:8080 in browser
+* npm start

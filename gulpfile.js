@@ -3,7 +3,7 @@ let gulp = require('gulp');
 let browserify = require('browserify');
 let babelify = require('babelify');
 let source = require('vinyl-source-stream');
-let connect = require('gulp-connect');
+let browserSync = require('browser-sync').create();
 
 gulp.task('copy-index', () => {
     return gulp.src('./src/index.html')
@@ -34,5 +34,9 @@ gulp.task('watch', ['build-jsx', 'copy-index', 'copy-css'], () => {
 });
 
 gulp.task('default', ['watch'], () => {
-    connect.server({root: 'dist', port: 8080});
+    browserSync.init({
+        server: { baseDir: 'dist', directory: false },
+        startPath: '/'
+    });
+    gulp.watch('dist/**/*').on('change', browserSync.reload);
 });
